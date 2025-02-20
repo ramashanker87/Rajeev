@@ -7,7 +7,7 @@ Description: CloudFormation Template to create an SQS Queue
 #Resources: → Declares the AWS resources being created.
 Resources:
   # Logical name for the resource
-  RamaQueue:
+  RajeevQueue:
     #Specifies that this resource is an Amazon SQS Queue.
     Type: "AWS::SQS::Queue"
     #Defines configuration for the queue.
