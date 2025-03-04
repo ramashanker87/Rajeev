@@ -24,17 +24,16 @@ public class ListSamples {
         listSamples.add("test1"); // Index 0
         listSamples.add("test2"); // Index 1
         listSamples.add("test3"); // Index 2
-        listSamples.printList();
-        System.out.println("Value at Index 1: "+stringList.get(1));
+        System.out.println("Value at Index 1:"+stringList.get(1));
         stringList.set(1,"Rajeev");
-        System.out.println("Value at Index 1: "+stringList.get(1));
-        stringList.remove(1);
+        System.out.println("Value at Index 1:"+stringList.get(1));
         listSamples.printList();
         listSamples.sizeOfList();
+        System.out.println("After Remove");
+        listSamples.remove("test2");
         listSamples.printList();
         listSamples.sizeOfList();
         listSamples.add("test4");
-        System.out.println("After remove");
-        listSamples.remove("test2");
+        System.out.println(stringList.get(2));
     }
 }
