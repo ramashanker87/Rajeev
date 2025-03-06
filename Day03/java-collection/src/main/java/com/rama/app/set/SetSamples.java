@@ -3,6 +3,7 @@ package com.rama.app.set;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class SetSamples {
     public static void main(String[] args) {
@@ -21,7 +22,17 @@ public class SetSamples {
         setData.add(567);
         setData.add(89);
         setData.add(0);
+        System.out.println("LinkedHashSet: ");
         for(Integer data : setData){
+            System.out.println(data);
+        }
+        Set<Integer> setTreeData = new TreeSet<>();
+        setTreeData.add(1234);
+        setTreeData.add(567);
+        setTreeData.add(89);
+        setTreeData.add(0);
+        System.out.println("TreeSet: ");
+        for(Integer data : setTreeData){
             System.out.println(data);
         }
     }
