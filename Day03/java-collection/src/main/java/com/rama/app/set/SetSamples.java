@@ -1,9 +1,8 @@
 package com.rama.app.set;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import jdk.internal.classfile.impl.CodeStackTrackerImpl;
+
+import java.util.*;
 
 public class SetSamples {
     public static void main(String[] args) {
@@ -34,6 +33,11 @@ public class SetSamples {
         System.out.println("TreeSet: ");
         for(Integer data : setTreeData){
             System.out.println(data);
+        }
+        System.out.println("Iterator: ");
+        Iterator<Integer> iterator = setData.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
         }
     }
 }
